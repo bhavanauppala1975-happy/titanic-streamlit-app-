@@ -1,142 +1,36 @@
-{
- "cells": [
-  {
-   "cell_type": "code",
-   "execution_count": 1,
-   "id": "4331c957-d39e-4c5e-8ee9-94d2ad413668",
-   "metadata": {},
-   "outputs": [
-    {
-     "name": "stderr",
-     "output_type": "stream",
-     "text": [
-      "2026-01-08 21:24:43.547 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.157 \n",
-      "  \u001b[33m\u001b[1mWarning:\u001b[0m to view this Streamlit app on a browser, run it with the following\n",
-      "  command:\n",
-      "\n",
-      "    streamlit run C:\\Users\\Bhavana\\anaconda3\\Lib\\site-packages\\ipykernel_launcher.py [ARGUMENTS]\n",
-      "2026-01-08 21:24:45.159 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.161 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.163 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.165 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.168 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.171 Session state does not function when running a script without `streamlit run`\n",
-      "2026-01-08 21:24:45.175 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.178 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.189 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.205 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.210 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.214 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.229 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.241 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.244 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.246 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.259 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.261 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.274 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.278 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.282 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.287 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.293 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.295 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.308 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.311 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.315 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.317 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.326 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.328 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.330 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.345 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.350 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.352 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.364 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.369 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.378 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.384 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.386 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.415 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.419 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.424 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.433 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.436 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.486 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.491 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.494 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.502 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
-      "2026-01-08 21:24:45.506 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n"
-     ]
-    }
-   ],
-   "source": [
-    "import streamlit as st\n",
-    "import pandas as pd\n",
-    "import joblib\n",
-    "\n",
-    "# Load model\n",
-    "model = joblib.load(\"titanic_model.pkl\")\n",
-    "scaler = joblib.load(\"scaler.pkl\")\n",
-    "\n",
-    "st.title(\"🚢 Titanic Survival Prediction\")\n",
-    "\n",
-    "# User Inputs\n",
-    "pclass = st.selectbox(\"Passenger Class\", [1,2,3])\n",
-    "sex = st.selectbox(\"Sex\", [\"male\", \"female\"])\n",
-    "age = st.number_input(\"Age\", 0, 100, 30)\n",
-    "sibsp = st.number_input(\"Siblings/Spouses\", 0, 10, 0)\n",
-    "parch = st.number_input(\"Parents/Children\", 0, 10, 0)\n",
-    "fare = st.number_input(\"Fare\", 0.0, 500.0, 32.0)\n",
-    "embarked = st.selectbox(\"Embarked Port\", [\"C\",\"Q\",\"S\"])\n",
-    "\n",
-    "# Encoding\n",
-    "sex = 0 if sex == \"male\" else 1\n",
-    "embarked_Q = 1 if embarked == \"Q\" else 0\n",
-    "embarked_S = 1 if embarked == \"S\" else 0\n",
-    "\n",
-    "input_df = pd.DataFrame([[pclass, sex, age, sibsp, parch, fare, embarked_Q, embarked_S]],\n",
-    "columns=['Pclass','Sex','Age','SibSp','Parch','Fare','Embarked_Q','Embarked_S'])\n",
-    "\n",
-    "input_scaled = scaler.transform(input_df)\n",
-    "\n",
-    "if st.button(\"Predict\"):\n",
-    "    prediction = model.predict(input_scaled)\n",
-    "    prob = model.predict_proba(input_scaled)[0][1]\n",
-    "\n",
-    "    if prediction[0] == 1:\n",
-    "        st.success(f\"Passenger Survived (Probability: {prob:.2f})\")\n",
-    "    else:\n",
-    "        st.error(f\"Passenger Did Not Survive (Probability: {prob:.2f})\")\n",
-    "\n"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "d18ce233-36ae-4e9e-a0ab-ac4d2301b940",
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Python [conda env:anaconda3] *",
-   "language": "python",
-   "name": "conda-env-anaconda3-py"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.13.5"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 5
-}
+import streamlit as st
+import pandas as pd
+import joblib
+
+# Load model
+model = joblib.load("titanic_model.pkl")
+scaler = joblib.load("scaler.pkl")
+
+st.title("🚢 Titanic Survival Prediction")
+
+# User Inputs
+pclass = st.selectbox("Passenger Class", [1,2,3])
+sex = st.selectbox("Sex", ["male", "female"])
+age = st.number_input("Age", 0, 100, 30)
+sibsp = st.number_input("Siblings/Spouses", 0, 10, 0)
+parch = st.number_input("Parents/Children", 0, 10, 0)
+fare = st.number_input("Fare", 0.0, 500.0, 32.0)
+embarked = st.selectbox("Embarked Port", ["C","Q","S"])
+
+# Encoding
+sex = 0 if sex == "male" else 1
+embarked_Q = 1 if embarked == "Q" else 0
+embarked_S = 1 if embarked == "S" else 0
+
+input_df = pd.DataFrame([[pclass, sex, age, sibsp, parch, fare, embarked_Q, embarked_S]],
+columns=['Pclass','Sex','Age','SibSp','Parch','Fare','Embarked_Q','Embarked_S'])
+
+input_scaled = scaler.transform(input_df)
+
+if st.button("Predict"):
+    prediction = model.predict(input_scaled)
+    prob = model.predict_proba(input_scaled)[0][1]
+
+    if prediction[0] == 1:
+        st.success(f"Passenger Survived (Probability: {prob:.2f})")
+    else:r(f"Passenger Did Not Survive (Probability: {prob:.2f})")
